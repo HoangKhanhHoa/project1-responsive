@@ -1,0 +1,177 @@
+@media screen and (max-width: $breakpoint-sm) {
+
+  //HEADER
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+
+  //BANNER
+  .banner {
+    &__container {
+      min-height: 480px;
+      background-size: 50%, 25%;
+    }
+
+    .ads {
+      bottom: 24px;
+      left: 18px;
+
+      &__title {
+        font-size: 92px;
+        line-height: 92px;
+      }
+
+      &__des {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      &__price {
+        font-size: 34px;
+        line-height: 48px;
+
+        &::after {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  //SHOWCASE-CATEGORIES
+  .categories {
+    .row {
+      flex-wrap: wrap;
+    }
+
+    &__multiple {
+      flex-basis: 100%;
+    }
+
+    &__introduce {
+      margin: 0px 0px 10px;
+      flex-basis: 100%;
+    }
+
+    .title-link {
+      font-size: 30px;
+
+      &::after {
+        font-size: 14px;
+      }
+    }
+
+    .title-special {
+      &__intro {
+        font-size: 38px;
+      }
+
+      &__daisy {
+        font-size: unset;
+
+        & :last-child {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  //SHOWCASE-REVIEW
+  .review {
+    &__des {
+      font-size: 14px;
+      margin-left: 16px;
+      width: 420px;
+    }
+
+    .custom-dots {
+      margin-left: 138px;
+    }
+  }
+
+  .tab {
+    &__link {
+      font-size: 14px;
+    }
+
+    &__active {
+      font-size: 24px;
+    }
+  }
+
+  //CAROUSEL-PRODUCT
+  .carousel-product {
+    .nav {
+      &__item:nth-child(n+2) {
+        &::before {
+          padding: 6px;
+        }
+      }
+    }
+
+    .product {
+
+      &__buy {
+        margin: 0 10px 10px;
+      }
+
+      &__love,
+      &__change {
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .control-prev :first-child,
+  .control-next :first-child {
+    width: 80%;
+  }
+
+  //CONTACT
+  .contact {
+    &__item {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  //CONTACT-SOCIAL
+  .social {
+    .nav {
+      &__item {
+        width: 16.66%;
+      }
+    }
+
+    &__icon {
+      margin-right: 5px;
+    }
+
+    &__name {
+      display: none;
+    }
+  }
+
+  //CONTACT-BLOG
+  .blog {
+    &__ava {
+      text-align: center;
+    }
+
+    &__img {
+      width: auto;
+    }
+  }
+
+  //FOOTER-MAINFOOTER
+  .main-footer {
+    &__item {
+      flex-basis: 50%;
+    }
+
+    .contact-us {
+      flex-basis: 100%;
+    }
+  }
+}

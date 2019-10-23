@@ -1,0 +1,89 @@
+/* COMMON USE */
+
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1230px;
+}
+
+%btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $theme-green;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.row {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  margin: 0;
+  padding: 13px 5px;
+  position: relative;
+
+  &::first-letter {
+    @include font-format(null, 36px, $pure-white);
+    font-weight: 100;
+    padding-right: 15px;
+  }
+
+  &::after {
+    @include circle(54px, 54px);
+    background-color: $theme-green;
+    content: '';
+    display: block;
+    left: 1px;
+    position: absolute;
+    top: 12px;
+    z-index: -1;
+  }
+
+  & :only-child {
+    @include font-format($font-thirsty, 34px, $black-1);
+    text-decoration: none;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: $theme-green;
+    }
+  }
+}
