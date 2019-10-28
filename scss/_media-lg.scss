@@ -1,0 +1,190 @@
+@media screen and (max-width: $breakpoint-lg) {
+
+  // HEADER
+  .header {
+    &__nav {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav {
+      margin-left: 0;
+    }
+
+    .form-search {
+
+      &__input-container,
+      &__main {
+        width: 260px;
+      }
+
+      &__hidden {
+        width: 0;
+      }
+
+      &__input {
+        width: 160px;
+      }
+    }
+  }
+
+  // BANNER
+  .banner {
+    &__container {
+      min-height: 742px;
+      background-size: 56%, 28%;
+    }
+
+    .ads {
+      bottom: 32px;
+      left: 18px;
+
+      &__title {
+        font-size: 128px;
+        line-height: 128px;
+      }
+
+      &__des {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &__price {
+        font-size: 42px;
+        line-height: 58px;
+
+        &::after {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  // SHOWCASE-CATEGORIES
+  .categories {
+    $this: &;
+    &__multiple {
+      #{$this}__item {
+        height: 50%;
+        box-sizing: border-box;
+      }
+    }
+
+    &__img {
+      width: 49%;
+      height: 100%;
+    }
+
+    &__introduce {
+      #{$this}__item {
+        height: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    .introduce-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .title-special__img {
+      width: 40%;
+    }
+  }
+
+  //SHOWCASE-REVIEW
+  .review {
+    background-position: 100%, 50%;
+    background-size: 40%;
+  }
+
+  // CAROUSEL-PRODUCT
+  .carousel-product {
+    .product {
+      width: calc((100% - 80px)/4);
+
+      &__img {
+        width: 100%;
+      }
+
+      &__buy {
+        padding: 10px 18px;
+      }
+
+      &__love {
+        padding: 13px 14px;
+      }
+
+      &__change {
+        padding: 11px 12px;
+      }
+    }
+  }
+
+  .control-prev {
+    transform: translateX(-50%);
+  }
+
+  .control-next {
+    transform: translateX(50%);
+  }
+
+  .contact {
+    &__title {
+      &::after {
+        font-size: 14px;
+        top: 80%;
+      }
+    }
+  }
+
+  // CONTACT-SOCIAL
+  .social {
+    .nav {
+      &__item {
+        width: 150px;
+      }
+    }
+  }
+
+  // CONTACT-BLOG
+  .blog {
+    &__img {
+      width: 100%;
+    }
+  }
+
+  // FOOTER-MAINFOOTER
+  .main-footer {
+    .footer-others {
+      &__link {
+        font-size: 12px;
+
+        &:hover {
+          &::before {
+            content: none;
+          }
+
+          color: $theme-green;
+        }
+      }
+
+      &__content {
+        margin-top: 14px;
+      }
+    }
+  }
+
+  // FOOTER-CONTACTUS
+  .contact-us {
+
+    &__address,
+    &__others {
+      font-size: 12px;
+    }
+
+    &__content {
+      padding: 0px;
+    }
+  }
+}
