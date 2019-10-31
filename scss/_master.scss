@@ -21,14 +21,17 @@ body {
     font-size: 0px;
   }
 
-  &__collapse-button {
+  &__right{
     font-size: 12px;
-    margin-top: 24px;
+    margin-left: auto;
+    margin-top: 25px;
     padding: 0 10px;
   }
 
   &__collapse-button {
     display: none;
+    font-size: 12px;
+    margin-top: 25px;
     padding: 0px;
   }
 
@@ -105,8 +108,7 @@ body {
   }
 
   .shopping-cart {
-    margin-left: auto;
-    margin-top: 26px;
+    float: left;
 
     &__link {
       color: $black-1;
@@ -122,15 +124,15 @@ body {
   }
 
   .form-search {
-    margin-left: 22px;
-    margin-top: 24px;
-    padding: 10px;
+    float: left;
+    margin-left: 32px;
+    padding: 10px 0;
     position: relative;
 
     &__input-container {
       position: absolute;
       overflow: hidden;
-      right: 30px;
+      right: 20px;
       top: 0;
       width: 360px;
       transition: all 0.6s ease-in-out;
