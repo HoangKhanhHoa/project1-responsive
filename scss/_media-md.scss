@@ -8,11 +8,13 @@
 
     &__collapse-button {
       display: block;
+      order: 1;
     }
 
     &__nav {
       display: none;
       flex-basis: 100%;
+      order: 1;
     }
 
     .nav {
@@ -48,26 +50,28 @@
       }
     }
 
-    &__right {
-      display: none;
-      margin: 0;
-      padding: 0;
-    }
-
     .shopping-cart {
-      float: none;
+      margin-top: 24px;
+      margin-right: 15px;
 
       &__link {
-        padding: 15px;
+        padding: 10px;
       }
     }
 
     .form-search {
-      float: none;
+      display: none;
+      flex-basis: 100%;
       margin: 0;
+      order: 1;
+      padding: 10px 0;
 
       &__button {
-        padding: 15px;
+        padding: 10px;
+        position: absolute;
+        left: 220px;
+        top: 50%;
+        transform: translateY(-50%);
         width: auto;
       }
 
@@ -87,7 +91,9 @@
       }
 
       &__input {
-        width: auto;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 20px;
       }
     }
   }
@@ -95,7 +101,9 @@
   // BANNER
   .banner {
     &__container {
-      min-height: 640px;
+      min-height: 614px;
+      background-size: 50%, 25%;
+      background-position: left 100% bottom 0, 14% 26.5%;
     }
 
     .ads {

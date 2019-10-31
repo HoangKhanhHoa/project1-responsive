@@ -1,15 +1,54 @@
 @media screen and (max-width: $breakpoint-xs) {
 
+  //HEADER
+  .header{
+    min-height: unset;
+    &__collapse-button {
+      margin: auto 0;
+    }
+    .logo{
+      padding: 10px 5px;
+      & :only-child{
+        font-size: 30px;
+      }
+      &::first-letter{
+        font-size: 32px;
+        padding-right: 12px;
+      }
+      &::after{
+        width: 48px;
+        height: 48px;
+        top: 9px;
+      }
+    }
+    .shopping-cart{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .form-search{
+      &__input-container{
+        width: 100%;
+      }
+      &__input{
+        box-sizing: border-box;
+        width: 100%;
+      }
+      &__button{
+        left: auto;
+        right: 0;
+      }
+    }
+  }
   //BANNER
   .banner {
     &__container {
       min-height: 332px;
       background-size: 44%, 21%;
-      background-position: left 100% bottom 0%, 10% 36%;
+      background-position: left 100% bottom 0%, 12% 36%;
     }
 
     .ads {
-      bottom: 12px;
+      bottom: 8px;
       left: 8px;
 
       &__title {
@@ -172,7 +211,7 @@
 
     .footer-others {
       &__link {
-        font-size: 13px;
+        font-size: 12px;
       }
     }
   }
@@ -182,11 +221,15 @@
     &__others {
       &:last-child {
         #{$this}__item:last-child {
-          margin-left: 14px;
+          margin-left: 13px;
         }
       }
 
-      font-size: 13px;
+      font-size: 12px;
+    }
+
+    &__address{
+      font-size: 12px;
     }
 
     &__hyphen {
