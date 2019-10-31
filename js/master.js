@@ -38,6 +38,10 @@ $('body').click(function (e) {
     if (target !== header) {
       $('.js-header-nav').slideUp(function () {
         $(this).removeAttr('style');
+        var y = window.scrollY;
+        if(y <= 0){
+          $('.js-header').removeClass('header--stuck');
+        }
       });
     }
   }

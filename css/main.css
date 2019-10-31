@@ -1607,9 +1607,13 @@ body {
   }
   .header .form-search__input-container {
     top: 150%;
-    right: -50%;
+    right: 0;
     left: auto;
-    transition: all 0.4s;
+    transition: all 0.3s;
+    width: auto;
+  }
+  .header .form-search__main {
+    width: auto;
   }
   .header .form-search__hidden {
     width: auto;

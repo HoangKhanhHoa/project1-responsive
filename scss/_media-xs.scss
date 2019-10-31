@@ -29,9 +29,13 @@
     .form-search{
       &__input-container{
         top: 150%;
-        right: -50%;
+        right: 0;
         left: auto;
-        transition: all 0.4s;
+        transition: all 0.3s;
+        width: auto;
+      }
+      &__main{
+        width: auto;
       }
       &__hidden{
         width: auto;
